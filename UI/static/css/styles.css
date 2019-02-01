@@ -183,7 +183,9 @@ form input {
 
   /* end of form styles */
   
-
+.profileh4{
+  color: #2bc9a6;
+}
   h4{
     
     color: #636363
@@ -251,7 +253,7 @@ form input {
     background:#F4F4F4;
     display: flex;
     transition: 0.3s;
-    margin-right: 8%;
+    margin-right: 6%;
  
 
 }
@@ -300,14 +302,14 @@ form input {
 
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
+  width: 180px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 80px; /* Stay at the top */
   
   background-color:#3d3b39; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 130px;
+  padding-top: 30px;
   font-family:'Candal', sans-serif;
   box-shadow: 0 8px 16px 0 #636363;
 }
@@ -317,13 +319,13 @@ form input {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color:#f1f1f1;
+  color:#818181;
   display: block;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color:  #818181;
+  color:#f1f1f1;
 }
 
 /* Style page content */
