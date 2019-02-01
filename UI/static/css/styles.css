@@ -186,6 +186,11 @@ form input {
 .profileh4{
   color: #2bc9a6;
 }
+a{
+    
+  color: #636363
+  }
+  
   h4{
     
     color: #636363
@@ -235,6 +240,7 @@ form input {
     padding-top: .1rem;
     color:whitesmoke;
 }
+
 .profile-container__sidebar ul > li{
     text-decoration: none;
     margin: 1.5rem;
@@ -283,6 +289,13 @@ form input {
 }
 .profile-icon h4{
     padding: .6rem;
+}
+.profile-icon a{
+  padding: .6rem;
+}
+.profile-icon a{
+  padding: .6rem;
+  text-decoration: none;
 }
 .profile-icon .fa{
     padding: .5rem;
@@ -339,3 +352,48 @@ form input {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+/* modal styles */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 1; /* Stay on top */
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(41, 231, 215);
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+  z-index: 1; /* Stay on top */
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/* end of modal styles */
