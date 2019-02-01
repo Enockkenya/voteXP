@@ -21,6 +21,7 @@ ul {
     top: 0;
     width: 100%;
     height: 50px;
+    box-shadow: 0 6px 10px 0 #9b9894;
       
   }
   img{
@@ -29,7 +30,9 @@ ul {
     cursor: pointer;
     
   }
-
+span{
+    color: #636363;
+}
 
   li a {
     display: block;
@@ -91,13 +94,18 @@ ul {
   
   .btn{
     background:#2bc9a6;
-    color:	#ffffff;
+    color:	#F4F4F4;
     padding:5px 40px;
     text-decoration: none;
     border-radius: 10px;
     margin-left: 30px;
     font-family:'Tenor Sans', sans-serif;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 #636363;
   
+  }
+  .btn :hover {
+    box-shadow: 0 4px 8px 0 #636363;
   }
   
   
@@ -108,7 +116,7 @@ ul {
     
   }
   .section-profile{
-   background-color:#E8EAF2;
+   background-color: #F4F4F4;
    position: absolute;
     top:80px;
     left:0;
@@ -135,8 +143,8 @@ ul {
     font-family: "Roboto", sans-serif;
     background-color: #E5E5E6;
     text-align:center;
-    border-radius: 25px;
-   
+    border-radius: 20px;
+
 }
 .formregister h2{
     font-family:'Candal', sans-serif;
@@ -172,15 +180,19 @@ form input {
     cursor: pointer;
     border-radius: 5px;
 }
+
   /* end of form styles */
   
-
+.profileh4{
+  color: #2bc9a6;
+}
   h4{
-    color:  #3d3b39;
+    
+    color: #636363
     }
     
     h2{
-      color:  #3d3b39;
+      color: #636363;
      }
     
      h1{
@@ -196,3 +208,134 @@ form input {
       color:  #3d3b39;
       font-family: "Roboto", sans-serif;
      }
+
+   /* profile settings */
+ 
+#profile-page h1{
+    text-align: center;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.3rem solid  #3d3b39;
+}
+.profile-container{
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile-container__sidebar{
+    width: 20rem;
+    height: 60vh;
+    background-color: #22313F;
+    float: left;
+}
+.profile-container__sidebar h4{
+    text-align: center;
+    padding-top: .1rem;
+    color:whitesmoke;
+}
+.profile-container__sidebar ul > li{
+    text-decoration: none;
+    margin: 1.5rem;
+    list-style: none;
+}
+.profile-container__sidebar ul > li a{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* Main sidebar styling */
+.profile-section{
+  
+    float: right;
+    background:#F4F4F4;
+    display: flex;
+    transition: 0.3s;
+    margin-right: 6%;
+ 
+
+}
+.profile-section .profile-panel{
+    width: 10rem;
+    height: 10rem;
+    background: #F4F4F4;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 6px 10px 0 #9b9894;
+    transition: 0.3s;
+    color: #636363;
+
+}
+.profile-panel:hover {
+  box-shadow: 0 8px 16px 0 #636363;
+}
+.profile-section a{
+ text-decoration: none;
+}
+
+.profile-icon{
+   
+    color:#2bc9a6;
+    
+}
+.profile-icon h4{
+    padding: .6rem;
+}
+.profile-icon .fa{
+    padding: .5rem;
+    font-size:5rem;
+    margin-left:1.5rem;
+}
+
+.userprofile {
+  box-shadow: 0 2px 6px 0 #636363;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: #E5E5E6;
+  border-radius: 10px;
+  font-weight: 400px;
+ 
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 180px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 80px; /* Stay at the top */
+  
+  background-color:#3d3b39; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 30px;
+  font-family:'Candal', sans-serif;
+  box-shadow: 0 8px 16px 0 #636363;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color:#818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color:#f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
